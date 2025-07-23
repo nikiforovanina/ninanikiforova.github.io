@@ -1,104 +1,83 @@
-baseURL: "https://pascalmichaillat.org/" 
-title: Pascal Michaillat
+baseURL: "https://nikiforovanina.github.io/"
+title: Nina Nikiforova
 theme: PaperMod
+paginate: 20
 enableInlineShortcodes: true
 enableRobotsTXT: true
-pagination:
-  pagerSize: 40
-
-taxonomies:
-    tag: tags
-
-menu:
-    main:
-        - name: Dashboard
-          url: dashboard/
-          weight: 1
-        - name: Papers
-          url: papers/
-          weight: 2
-        - name: Courses
-          url: courses/
-          weight: 3
-        - name: Design
-          url: design/
-          weight: 4        
 
 params:
-    description: "This website hosts Pascal Michaillat's research papers, course materials, design templates, curriculum vitae, and a real-time business cycle dashboard."
-    author: Pascal Michaillat
-    googleAnalyticsID: "G-97G4MZ4061"
-    images: ["cover.png"]
-    DateFormat: "January 2006"
-    defaultTheme: light
-    hideFooter: true
-    disableThemeToggle: true
-    ShowShareButtons: false
-    ShowReadingTime: false
-    ShowWordCount: false
-    disableSpecial1stPost: true
-    disableAnchoredHeadings: true
-    ShowPostNavLinks: false
-    ShowBreadCrumbs: false
-    disableScrollToTop: true
-    ShowCodeCopyButtons: true
-    ShowToc: false
-    TocOpen: false
-    UseHugoToc: true
-    comments: false
-    math: true
-    profileMode:
-          enabled: true
-          title: Pascal Michaillat
-          subtitle: "I am a professor of economics at the University of California, Santa Cruz. I work primarily on economic slack, especially unemployment: why it exists, why it fluctuates over the business cycle, and how macroeconomic policies should respond to such fluctuations."
-          imageUrl: "/picture.jpeg"
-          imageWidth: 130
-          imageHeight: 130
-          buttons:
-            - name: Dashboard
-              url: dashboard/  
-            - name: Papers
-              url: papers/
-            - name: Courses
-              url: courses/
-            - name: Design
-              url: design/
-
-    socialIcons:
-        - name: CV
-          url: cv.pdf
-        - name: Email
-          url: mailto:pascal.michaillat@gmail.com
-        - name: Location
-          url: location/
-        - name: Office Hours
-          url: officehours/
-        - name: Google Scholar
-          url: https://scholar.google.com/citations?user=cL23w-4AAAAJ
-        - name: YouTube
-          url: https://www.youtube.com/@pmichaillat
-        - name: GitHub
-          url: https://github.com/pmichaillat
-
-    assets:
-        disableScrollBarStyle: true
-    cover:
-        hiddenInList: true
-        hiddenInSingle: true
-    label:
-      text: "Pascal Michaillat"
+  description: "PhD Student in Economics at Bocconi University"
+  author: Nina Nikiforova
+  defaultTheme: light
+  disableThemeToggle: true
+  hideFooter: true
+  ShowReadingTime: false
+  ShowPostNavLinks: false
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: false
+  disableScrollToTop: true
+  disableSpecial1stPost: true
+  ShowToc: false
+  
+  # Enable custom profile mode
+  profileMode:
+    enabled: true
+    title: ""  # We'll handle title in custom layout
+    subtitle: ""
+    imageUrl: "/IMAGE4.jpg"
+    imageWidth: 150
+    imageHeight: 150
+    buttons: []  # We'll handle buttons in custom layout
+  
+  # Custom profile data for academic layout
+  customProfile:
+    name: "Nina Nikiforova"
+    email: "nina.nikiforova@phd.unibocconi.it"
+    cvLink: "/cv.pdf"
+    imageUrl: "/IMAGE4.jpg"
+    imageWidth: 150
+    imageHeight: 150 
+    shortDescription: "I am a fourth-year PhD student in Economics at Bocconi University."
+    description: "My research interests lie in the fields of political economy and applied industrial organization."
+    
+    # Academic sections
+    workingPapers:
+      - title: "Discontent first, Ideology Later"
+        coauthors: ""
+        status: ""
+        link: ""
+        abstract: "Add your abstract here..."
+      # Add more papers by duplicating the structure above
+    
+    # Publications section
+   # publications:
+      # - title: "Your Published Paper Title"
+      #   coauthors: "Co-author Name"
+      #   journal: "Journal Name, Vol. X, Year"
+      #   link: "https://link-to-paper.com"
+    
+    # Work in progress section  
+  #  worksInProgress:
+      # - title: "Your Work in Progress Title"
+      #   coauthors: "Co-author Name"
+      #   status: "Draft available upon request"
+  
+  assets:
+    favicon: "/apple-touch-icon.png"
+    favicon16x16: "/apple-touch-icon.png"
+    favicon32x32: "/apple-touch-icon.png"
+    apple_touch_icon: "/apple-touch-icon.png"
+    disableHLJS: true
+    disableScrollBarStyle: true
+  
+  customCSS:
+    - css/academic.css
 
 markup:
-    goldmark:
-        renderer:
-            unsafe: true
-    highlight:
-        guessSyntax: true
-        style: xcode 
-    tableOfContents:
-        endLevel: 2
-        ordered: false
-        startLevel: 2
+  goldmark:
+    renderer:
+      unsafe: true
 
-titleCaseStyle: 'none'
-enableGitInfo: true
+highlight:
+  guessSyntax: true
+  style: github
